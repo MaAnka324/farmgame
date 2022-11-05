@@ -1,0 +1,346 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px; 
+    background: #FDFCEF;
+    border-radius: 50px;
+    margin: 0;
+    padding: 60px, 245px, 120px, 245px; 
+}    
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;     
+}
+p {
+    line-height: 24.61px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+    line-height: 1.4em;
+    margin: 0;
+}
+h1 {
+    font-size: 50px;
+    width: 465px;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+h3 {
+    font-size: 30px;
+}
+header {
+    padding-top: 60px;
+    
+}
+.logo {
+    margin-left: 0;
+    margin-bottom: 0;
+    display: block;
+    max-width: 182px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 79px;
+    justify-content: space-between;
+}
+.image {
+    width: 465px;
+}
+.intro {
+    font-size: 18px;
+    margin: 30px 0;
+    width: 423px;
+}
+.button {
+    background: #FF6861;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 70px;
+    font-weight: 700;
+    display: block;
+    width: 227px;
+    height: 69px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.button:hover {
+    background: rgb(255, 140, 90);
+}
+.hero-text {
+    margin-left: 0;
+}
+.hero-text h2 {
+    text-align: left;
+    margin-bottom: 0;
+    width: 475px;
+}
+.hero-text .intro {
+    width: 371px;
+}
+.action .hero-text {
+    width: 475px;
+}
+.action-wrap .intro {
+    margin: 24px 0;
+    width: 371px;
+}
+.features {
+    max-width: 720px;
+    margin: 0 auto;
+}
+.feature-container {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 720px;
+    margin: 0 auto;
+}
+section { 
+    padding-top: 120px;
+}
+.feature-cross {
+    width: 73px;
+}
+.feature-title {
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+.feature {
+    display: flex;
+    gap: 34px;
+}
+.feature img {
+    width: 73px;
+}
+.action-wrap {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    padding: 76px 125px 75px 122px;
+    gap: 101px;
+    justify-content: center;
+    
+    
+}
+.cow {
+    padding-right: 125px;
+    width: 287px;
+    height: 287px;
+}
+.credits {
+    font-size: 15px;
+    text-align: center;
+}
+.footer {
+    padding: 120px 0;
+}
+
+/* Responsiv */
+
+/* Large: 992px - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Medium: 768px - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .wrapper {
+        flex-direction: column;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+    .button {
+        margin: 0 auto;
+        gap: 51px;
+    }
+    h1 {
+        margin-top: 51px;
+        width: 720px;
+    }
+    .hero-text .intro {
+        width: 720px;
+    }
+    .action-wrap {
+        flex-direction: column;
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 101px 144px;
+    }
+    .cow {
+        margin: 0 auto;
+    }
+    .hero-text h2 {
+        text-align: center;
+    }
+    .hero-text p {
+        width: 371px;
+    }
+    .action-wrap .hero-text .intro {
+        width: 371px;
+        text-align: center;
+        margin: 24px auto;
+    }
+}
+
+/* Small: 576px - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .wrapper h1 {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 51px;
+    }
+    .wrapper .intro {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 31px;
+        margin-bottom: 30px;
+    }
+    .wrapper .image {
+        width: 320px;
+    }
+    .header .container{
+        width: auto;
+        
+    }
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-container {
+        width: auto;
+    }
+    .feature-container .feature img {
+        margin: 0 auto;
+    }
+    .features .container {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .action-wrap .hero-text h2 {
+        width: 320px; 
+        padding-right: 0px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .action-wrap .hero-text .intro {
+        width: 280px;
+        margin: 24px auto;
+        text-align: center;
+        
+        padding-right: 0px;
+    }
+    .action-wrap .hero-text .button {
+        text-align: center;
+        
+    }
+    .container .action-wrap .hero-text {
+        padding: 70px 20px;
+        width: 320px;
+        padding-left: 246px;
+    }
+    
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .wrapper h1 {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 51px;
+    }
+    .wrapper .intro {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 31px;
+        margin-bottom: 30px;
+    }
+    .wrapper .image {
+        width: 100%;
+    }
+    .header .container{
+        width: auto;
+        width: 320px;
+    }
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-container {
+        width: auto;
+    }
+    .feature-container .feature img {
+        margin: 0 auto;
+        
+    }
+    .features .container {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .action-wrap .hero-text h2 {
+        width: 280px; 
+        margin: 24px auto;
+        text-align: left;
+    }
+    .action-wrap {
+        text-align: center;
+        margin: 0 auto;
+        gap: 0px;
+        margin-bottom: 0;
+        
+    }
+    
+    .action-wrap .hero-text .intro {
+        width: 280px;
+        margin: 24px auto;
+        text-align: center;
+    }
+    .cow img {
+        width: 100%;
+        margin-top: 70px;
+    }
+    .action-wrap {
+        padding: 0 59.5px;
+    }
+    .action-wrap .hero-text .button {
+        margin: 24px -46.5px;
+       
+    }
+    .container .action-wrap .hero-text {
+        padding: 70px 20px;
+        width: 320px;
+        
+    }
+}
